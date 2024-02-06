@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Section</title>
+    <style>
+        
+        body {
+            overflow-x: hidden;
+            align-items: center;
+        }
+.grid {
+  width: 1500px;
+  max-width: 100%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 1fr;
+  grid-auto-flow: row dense;
+  grid-gap: 10px;
+  
+}
+
+.box {
+    
+  position: relative;
+  color: rgb(44, 0, 0);
+  font-size: 2rem;
+  font-family: 'Font3';
+height: 300px;
+
+  
+  &::before {
+    
+    display: block;
+    width: 100%;
+    padding-top: 50%;
+  }
+ 
+  &::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+  }
+}
+
+.blue {
+  background: #c0c0ff;
+  border: 5px solid rgba(0,0,0,.5);
+  text-align: justify;  display: flex;
+            align-items: center; 
+}
+
+
+.green {
+  background: #e2c4ff;
+  border: 5px solid rgba(0,0,0,.5);
+  text-align: justify;  display: flex;
+            align-items: center; 
+}
+
+.tall {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.wide {
+  grid-row: span 1;
+  grid-column: span 2;
+}
+
+.square {
+  grid-row: span 1;
+  grid-column: span 1;
+}
+
+.shuffleWrap {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.timeline {
+    display: flex;
+    transition: transform ease-in-out;
+    
+}
+
+#timelineScrollbar {
+    width: 100%;
+    margin: 10px auto;
+    
+}
+.grow { 
+    
+    transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+transform: scale(1.2); 
+z-index: 1000;
+}
+
+@media(max-width: 500px) {
+    body {
+        overflow-x: hidden;
+       
+    }
+  .grid {
+    grid-template-columns: 0.75fr;
+  }
+  .wide {
+    grid-column: span 0.75;
+  }
+  
+
+}
+.button-50 {
+
+background-color: #000;
+background-image: none;
+border: 1px solid #000;
+border-radius: 4px;
+box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+box-sizing: border-box;
+color: #fff;
+cursor: pointer;
+display: inline-block;
+font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+margin: 0 5px 10px 0;
+overflow: visible;
+padding: 12px 40px;
+text-align: center;
+text-transform: none;
+touch-action: manipulation;
+user-select: none;
+-webkit-user-select: none;
+vertical-align: middle;
+white-space: nowrap;
+}
+
+.button-50:focus {
+text-decoration: none;
+}
+
+.button-50:hover {
+text-decoration: none;
+}
+
+.button-50:active {
+box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+outline: 0;
+}
+
+.button-50:not([disabled]):active {
+box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+.button-50 {
+  padding: 12px 50px;
+}
+}
+
+
+
+
+    </style>
+    <link rel="styles.css">
+    </head>
+    <body>
+        <div style="display: inline; white-space: nowrap;">
+            <a href="blog2.html"><img src="blog_img/stave.png" height="100px" width="100px" style="margin-right: -10px; position: absolute; top:7.6px; left:0px;"></a><div class = "timeline" id="timeline">
+                <img src="blog_img/pentagram.png"  height="100px" width="100px" style="margin-right: -10px; margin-left: 10px;">
+                <a href="blogs/blogp1.html"><img src="blog_img/pentagram(1).png" height="100px" width="100px" style="margin-right: -5px; "></a>
+                
+                
+                <a href="blogs/blogp2.html"><img src="blog_img/pentagram(2).png"  height="100px" width="100px" style="margin-right: -5px;"></a>
+                <img src="blog_img/pentagram(3).png"  height="100px" width="100px" style="margin-right: -5px;">
+                <img src="blog_img/pentagram(4).png"  height="100px" width="100px" style="margin-right: -5px;">
+                <img src="blog_img/pentagram(5).png"  height="100px" width="100px" style="margin-right: -5px;">
+                <img src="blog_img/pentagram(6).png"  height="100px" width="100px" style="margin-right: -10px;">
+                <img src="blog_img/pentagram.png"  height="100px" width="100px" style="margin-right: -10px;">
+                <img src="blog_img/pentagram.png"  height="100px" width="100px" style="margin-right: -10px;">
+                <img src="blog_img/pentagram.png"  height="100px" width="100px" style="margin-right: -10px;">
+                <img src="blog_img/pentagram.png"  height="100px" width="100px" style="margin-right: -10px;">
+                <img src="blog_img/pentagram.png"  height="100px" width="100px" style="margin-right: -10px;">
+                <img src="blog_img/pentagram.png"  height="100px" width="100px" style="margin-right: -10px;">
+                <img src="blog_img/pentagram.png"  height="100px" width="100px" style="margin-right: -10px;">
+                <img src="blog_img/pentagram.png"  height="100px" width="100px" style="margin-right: -10px;">
+                <img src="blog_img/pentagram.png"  height="100px" width="100px" style="margin-right: -10px;">
+                <img src="blog_img/pentagram.png"  height="100px" width="100px" style="margin-right: -10px;">
+                <img src="blog_img/pentagram.png"  height="100px" width="100px" style="margin-right: -10px;">
+                <img src="blog_img/pentagram.png"  height="100px" width="100px" style="margin-right: -10px;">
+                <img src="blog_img/pentagram.png"  height="100px" width="100px" style="margin-right: -10px;">
+                <img src="blog_img/pentagram.png"  height="100px" width="100px" style="margin-right: -10px;">
+                <img src="blog_img/pentagram.png"  height="100px" width="100px" style="margin-right: -10px;">
+                <img src="blog_img/pentagram.png"  height="100px" width="100px" style="margin-right: -10px;">
+                <img src="blog_img/pentagram.png"  height="100px" width="100px" style="margin-right: -10px;">
+                <img src="blog_img/pentagram.png"  height="100px" width="100px" style="margin-right: -10px;">
+                <img src="blog_img/pentagram.png"  height="100px" width="100px" style="margin-right: -10px;">
+                <img src="blog_img/pentagram.png"  height="100px" width="100px" style="margin-right: -10px;">
+                <img src="blog_img/pentagram.png"  height="100px" width="100px" style="margin-right: -10px;">
+                <img src="blog_img/pentagram.png"  height="100px" width="100px" style="margin-right: -10px;">
+                <img src="blog_img/pentagram.png"  height="100px" width="100px" style="margin-right: -10px;">
+                <img src="blog_img/pentagram.png"  height="100px" width="100px" style="margin-right: -10px;">
+                <img src="blog_img/pentagram.png"  height="100px" width="100px" style="margin-right: -10px;">
+                <img src="blog_img/pentagram.png"  height="100px" width="100px" style="margin-right: -10px;"></div>
+            
+                <a href="index.html"><img src="blog_img/stave(1).png"  height="100px" width="100px" style="margin-right: -10px; position: absolute; top:7.6px; right:0px;"></a>
+            </div>
+        <input type="range" id="timelineScrollbar" min="0" max="100" value="0" step="1" >
+        <div style="font-family: 'Font2'; font-size: 8vw; text-align: center;"><h1>BLOG</h1></div>
+        <h4 style="text-align: center;">Click on the notes (only implemented the first 2) to go on the respective blog number. Clicking on the first image will lead you to the first blog. Click on the first two-dotted lines to go to the blog home and the last two dotted buttons to go to the main blog.</h4>
+        <div class="shuffleWrap">
+            <button class="shuffle button-50">Shuffle Blog</button>
+          </div>
+          <div class="grid">
+            <div class="box blue wide grow"><div style="padding: 10px;"><a href="blogs/blogp1.html">Blog Title 1: <br>Lorem Ipsum is outdated!</a></div></div>
+            <div class="box green square grow"><div style="padding: 10px;"><a href="blogs/blogp2.html">Blog Title 2: <br>Lorem Ipsum is outdated!</a></div></div>
+            <div class="box blue wide grow"></div>
+            <div class="box green square grow"></div>
+            <div class="box blue wide grow"></div>
+            <div class="box green square grow"></div>
+            <div class="box blue wide grow"></div>
+            <div class="box green square grow"></div>
+            <div class="box blue wide grow"></div>
+            <div class="box green square grow"></div>
+            <div class="box blue wide grow"></div>
+            <div class="box green square grow"></div>
+            <div class="box blue wide grow"></div>
+            <div class="box green square grow"></div>
+            <div class="box blue wide grow"></div>
+            <div class="box green square grow"></div>
+          </div>
+          <script>
+      const timeline = document.getElementById('timeline');
+const scrollbar = document.getElementById('timelineScrollbar');
+
+scrollbar.addEventListener('input', () => {
+    const percentage = scrollbar.value / (scrollbar.max - scrollbar.min);
+    const maxTranslate = timeline.scrollWidth - timeline.clientWidth;
+    const newPosition = -percentage * maxTranslate;
+    timeline.style.transform = `translateX(${newPosition}px)`;
+});
+
+
+            const button = document.querySelector(".shuffle");
+const grid = document.querySelector(".grid");
+
+if (button && grid) {
+  button.addEventListener("click", () => {
+    for (var i = grid.children.length; i >= 0; i--) {
+        grid.appendChild(grid.children[Math.random() * i | 0]);
+    }
+  });
+}
+          </script>
+    </body>
+    </html>

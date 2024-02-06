@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .blog {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .like-counter {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .comment-section {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Placeholder Blog 1 -->
+<div class="blog" id="blog1">
+    <h2>Blog Title 1</h2>
+    <p>This is the content of Blog 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    <div class="like-counter" id="likeCounter1">0 Likes</div>
+    <button onclick="toggleLike('likeCounter1')">Like</button>
+    <div class="comment-section">
+        <h3>Comments</h3>
+        <textarea id="commentInput1" placeholder="Write a comment"></textarea>
+        <button onclick="addComment('commentInput1', 'commentSection1')">Add Comment</button>
+        <div id="commentSection1"></div>
+    </div>
+    <button onclick="resetBlog('likeCounter1', 'commentSection1')">Reset</button>
+</div>
+
+
+
+<script>
+    var toggle_flag = 1;
+    
+    // Function to toggle likes and store in local storage
+    function toggleLike(counterId) {
+        const likeCounter = document.getElementById(counterId);
+        let likes = parseInt(likeCounter.innerText);
+
+        // Toggle like
+        
+        if (toggle_flag == 1) {
+            likes++;
+            toggle_flag = 0;
+            
+        } else if (likes > 0) {
+            if (toggle_flag==0) {
+                likes--;
+                toggle_flag = 1;
+            }
+            
+
+        }
+
+        likeCounter.innerText = likes + (likes === 1 ? ' Like' : ' Likes');
+        
+        localStorage.setItem(counterId, likes);
+    }
+    // Function to add a comment and store in local storage
+    function addComment(inputId, commentSectionId) {
+        const commentInput = document.getElementById(inputId);
+        const commentSection = document.getElementById(commentSectionId);
+        const commentText = commentInput.value.trim();
+
+        if (commentText !== '') {
+            const commentDiv = document.createElement('div');
+            commentDiv.innerText = commentText;
+            commentSection.appendChild(commentDiv);
+            commentInput.value = '';
+
+            // Save comments to local storage
+            const comments = JSON.parse(localStorage.getItem(commentSectionId)) || [];
+            comments.push(commentText);
+            localStorage.setItem(commentSectionId, JSON.stringify(comments));
+        }
+    }
+
+    // Function to reset likes and comments to 0
+    function resetBlog(counterId, commentSectionId) {
+        const likeCounter = document.getElementById(counterId);
+        const commentSection = document.getElementById(commentSectionId);
+
+        // Reset likes
+        likeCounter.innerText = '0 Likes';
+        localStorage.setItem(counterId, 0);
+        sessionStorage.removeItem(`${counterId}_liked`);
+
+        // Reset comments
+        commentSection.innerHTML = '';
+        localStorage.setItem(commentSectionId, JSON.stringify([]));
+        toggle_flag = 1;
+    }
+
+    // Initialize likes and comments from local storage on page load
+    window.onload = function() {
+        initializeFromLocalStorage();
+    };
+
+    // Initialize likes and comments from local storage
+    function initializeFromLocalStorage() {
+        for (let i = 1; i <= 2; i++) {
+            const likeCounter = document.getElementById(`likeCounter${i}`);
+            const commentSection = document.getElementById(`commentSection${i}`);
+
+            // Initialize likes
+            const likes = parseInt(localStorage.getItem(`likeCounter${i}`)) || 0;
+            likeCounter.innerText = likes + (likes === 1 ? ' Like' : ' Likes');
+
+            // Initialize comments
+            const comments = JSON.parse(localStorage.getItem(`commentSection${i}`)) || [];
+            comments.forEach(commentText => {
+                const commentDiv = document.createElement('div');
+                commentDiv.innerText = commentText;
+                commentSection.appendChild(commentDiv);
+            });
+        }
+    }
+</script>
+
+</body>
+</html>

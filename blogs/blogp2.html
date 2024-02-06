@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog 2</title>
+    <style>
+        body {
+
+            background: #e2c4ff;
+            overflow-x: hidden;
+            align-items: center;
+        }
+
+
+
+        .timeline {
+            display: flex;
+            transition: transform ease-in-out;
+
+        }
+
+        #timelineScrollbar {
+            width: 100%;
+            margin: 10px auto;
+
+
+        }
+
+        p {
+            font-family: 'Font3';
+            font-size: 2vw;
+            text-align: justify;
+            margin: 7vw;
+        }
+
+        .blog {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .like-counter {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .comment-section {
+            margin-top: 10px;
+        }
+        .button-50 {
+
+background-color: #000;
+background-image: none;
+border: 1px solid #000;
+border-radius: 4px;
+box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+box-sizing: border-box;
+color: #fff;
+cursor: pointer;
+display: inline-block;
+font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+margin: 0 5px 10px 0;
+overflow: visible;
+padding: 12px 40px;
+text-align: center;
+text-transform: none;
+touch-action: manipulation;
+user-select: none;
+-webkit-user-select: none;
+vertical-align: middle;
+white-space: nowrap;
+}
+
+.button-50:focus {
+text-decoration: none;
+}
+
+.button-50:hover {
+text-decoration: none;
+}
+
+.button-50:active {
+box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+outline: 0;
+}
+
+.button-50:not([disabled]):active {
+box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+.button-50 {
+  padding: 12px 50px;
+}
+}
+    </style>
+    <link rel="../styles.css">
+</head>
+
+<body>
+    <div style="display: inline; white-space: nowrap;">
+        <a href="../blog2.html"><img src="../blog_img/stave.png" height="100px" width="100px"
+                style="margin-right: -10px; position: absolute; top:7.6px; left:0px;"></a>
+        <div class="timeline" id="timeline">
+            <img src="../blog_img/pentagram.png" height="100px" width="100px"
+                style="margin-right: -10px; margin-left: 10px;">
+            <a href="../blogs/blogp1.html"><img src="../blog_img/pentagram(1).png" height="100px" width="100px"
+                    style="margin-right: -5px; "></a>
+
+
+            <a href="../blogs/blogp2.html"><img src="../blog_img/pentagram(2).png" height="100px" width="100px"
+                    style="margin-right: -5px;"></a>
+            <img src="../blog_img/pentagram(3).png" height="100px" width="100px" style="margin-right: -5px;">
+            <img src="../blog_img/pentagram(4).png" height="100px" width="100px" style="margin-right: -5px;">
+            <img src="../blog_img/pentagram(5).png" height="100px" width="100px" style="margin-right: -5px;">
+            <img src="../blog_img/pentagram(6).png" height="100px" width="100px" style="margin-right: -10px;">
+            <img src="../blog_img/pentagram.png" height="100px" width="100px" style="margin-right: -10px;">
+            <img src="../blog_img/pentagram.png" height="100px" width="100px" style="margin-right: -10px;">
+            <img src="../blog_img/pentagram.png" height="100px" width="100px" style="margin-right: -10px;">
+            <img src="../blog_img/pentagram.png" height="100px" width="100px" style="margin-right: -10px;">
+            <img src="../blog_img/pentagram.png" height="100px" width="100px" style="margin-right: -10px;">
+            <img src="../blog_img/pentagram.png" height="100px" width="100px" style="margin-right: -10px;">
+            <img src="../blog_img/pentagram.png" height="100px" width="100px" style="margin-right: -10px;">
+            <img src="../blog_img/pentagram.png" height="100px" width="100px" style="margin-right: -10px;">
+            <img src="../blog_img/pentagram.png" height="100px" width="100px" style="margin-right: -10px;">
+            <img src="../blog_img/pentagram.png" height="100px" width="100px" style="margin-right: -10px;">
+            <img src="../blog_img/pentagram.png" height="100px" width="100px" style="margin-right: -10px;">
+            <img src="../blog_img/pentagram.png" height="100px" width="100px" style="margin-right: -10px;">
+            <img src="../blog_img/pentagram.png" height="100px" width="100px" style="margin-right: -10px;">
+            <img src="../blog_img/pentagram.png" height="100px" width="100px" style="margin-right: -10px;">
+            <img src="../blog_img/pentagram.png" height="100px" width="100px" style="margin-right: -10px;">
+            <img src="../blog_img/pentagram.png" height="100px" width="100px" style="margin-right: -10px;">
+            <img src="../blog_img/pentagram.png" height="100px" width="100px" style="margin-right: -10px;">
+            <img src="../blog_img/pentagram.png" height="100px" width="100px" style="margin-right: -10px;">
+            <img src="../blog_img/pentagram.png" height="100px" width="100px" style="margin-right: -10px;">
+            <img src="../blog_img/pentagram.png" height="100px" width="100px" style="margin-right: -10px;">
+            <img src="../blog_img/pentagram.png" height="100px" width="100px" style="margin-right: -10px;">
+            <img src="../blog_img/pentagram.png" height="100px" width="100px" style="margin-right: -10px;">
+            <img src="../blog_img/pentagram.png" height="100px" width="100px" style="margin-right: -10px;">
+            <img src="../blog_img/pentagram.png" height="100px" width="100px" style="margin-right: -10px;">
+            <img src="../blog_img/pentagram.png" height="100px" width="100px" style="margin-right: -10px;">
+            <img src="../blog_img/pentagram.png" height="100px" width="100px" style="margin-right: -10px;">
+        </div>
+
+        <a href="../index.html"><img src="../blog_img/stave(1).png" height="100px" width="100px"
+            style="margin-right: -10px; position: absolute; top:7.6px; right:0px;"></a>
+    </div>
+    <input type="range" id="timelineScrollbar" min="0" max="100" value="0" step="1">
+    <h4 style="text-align: center;">Click on the notes (only implemented the first 2) to go on the respective blog
+        number. Clicking on the first image will lead you to the first blog.</h4>
+    <div class=blog style="font-family: 'Font2'; font-size: 4vw; text-align: center; margin: 80px;">
+        <h2>Blog 2 :<br> Lorem Ipsum is outdated! <br></h2>
+   
+    <center><div class="like-counter" id="likeCounter1"
+        style="font-family: 'Font3'; font-size:50px; text-align: center; vertical-align: center;">0</div> <img
+        src="like-icon.png" height="50vw" width="50vw" alt="Like" id="likeButton1"
+        onclick="toggleLike('likeCounter1', 'likeButton1')"><br><button class="button-50" onclick="resetBlog('likeCounter1', 'commentSection1')">Reset</button></center>
+    
+        <p>
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo massa ac dolor dignissim facilisis.
+            Morbi turpis magna, pharetra tincidunt porttitor eget, sodales efficitur velit. Aliquam erat volutpat. Nulla
+            porttitor euismod risus, nec elementum quam dignissim eget. Nulla blandit id libero ut faucibus. Mauris
+            fringilla congue imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+            curae;
+
+            Sed nec metus leo. Curabitur scelerisque tellus nisl, eget pulvinar ante dictum nec. Pellentesque nisl
+            libero, fringilla eu maximus eu, tempus ac risus. Duis bibendum, neque eu malesuada malesuada, nibh neque
+            sagittis purus, a semper nisl ex id nisl. Sed faucibus erat eu nisi feugiat, vitae vulputate magna ornare.
+            Integer nibh urna, placerat quis semper nec, tempor non turpis. Mauris quis tincidunt sapien, et viverra
+            arcu. Ut risus ex, sagittis convallis sapien id, interdum viverra velit.
+
+            Sed condimentum sapien eu ante maximus tincidunt. Suspendisse non urna non turpis ullamcorper ultricies.
+            Proin pellentesque scelerisque massa nec tempus. Maecenas non vestibulum quam. Pellentesque molestie posuere
+            libero, id feugiat dui dignissim eget. Nulla feugiat viverra metus, finibus laoreet purus. Vestibulum nec
+            tincidunt ligula. Proin lectus elit, venenatis et odio a, laoreet luctus felis.
+
+            Aenean posuere, lacus non lobortis porttitor, ligula purus commodo augue, euismod pharetra purus justo ac
+            leo. Praesent vitae ante a eros ultrices egestas vel eget diam. Mauris eget ante rutrum, ultricies urna
+            posuere, lacinia odio. Sed gravida tortor ut nibh condimentum interdum. Cras ullamcorper condimentum enim in
+            maximus. Nulla eleifend laoreet varius. Praesent posuere lobortis gravida. Suspendisse consequat tempor nisi
+            at volutpat. In sit amet elementum tortor. Sed tincidunt ligula luctus, tincidunt tortor ornare, porta sem.
+            Sed vitae augue accumsan, iaculis tellus in, facilisis nibh. Maecenas lacinia, velit non sollicitudin
+            euismod, arcu odio maximus velit, a commodo odio dolor eget enim. Pellentesque et augue ante.
+
+            Aliquam ante nunc, pretium quis eleifend sit amet, vehicula dignissim felis. Praesent vulputate lacus neque,
+            nec eleifend urna euismod vel. Etiam vitae ligula facilisis tellus sodales consectetur. Etiam pulvinar elit
+            quis nulla lobortis, sit amet condimentum augue finibus. Suspendisse turpis odio, aliquam sit amet accumsan
+            et, tristique ut leo. Praesent sed lectus ac erat dapibus viverra. Donec et arcu euismod, aliquet dui sed,
+            laoreet odio. Nulla et sapien ut diam bibendum molestie. Curabitur cursus ipsum augue. Nullam lobortis id
+            dui vitae viverra. Ut id accumsan turpis. Cras ultrices nulla et ex vulputate feugiat. In porttitor nisl nec
+            semper feugiat. Ut porttitor bibendum lobortis. Nullam tristique, nulla nec tristique efficitur, quam lorem
+            convallis dui, ac lacinia odio justo non libero. </p> 
+        
+        
+            <center><div class="comment-section" style="font-family: 'Font3'; font-size: 2vw;">
+                <h2 >Comments</h2>
+                <textarea id="commentInput1" placeholder="Write a comment" style="width: fit-content;"></textarea>
+                <button class="button-50" onclick="addComment('commentInput1', 'commentSection1')">Add Comment</button>
+                <div id="commentSection1"></div>
+            </div></center>
+        
+        
+        
+        
+        </div>
+
+
+           
+        </div>
+        <script>
+            const timeline = document.getElementById('timeline');
+            const scrollbar = document.getElementById('timelineScrollbar');
+
+            scrollbar.addEventListener('input', () => {
+                const percentage = scrollbar.value / (scrollbar.max - scrollbar.min);
+                const maxTranslate = timeline.scrollWidth - timeline.clientWidth;
+                const newPosition = -percentage * maxTranslate;
+                timeline.style.transform = `translateX(${newPosition}px)`;
+            });
+
+
+            const button = document.querySelector(".shuffle");
+            const grid = document.querySelector(".grid");
+
+            if (button && grid) {
+                button.addEventListener("click", () => {
+                    for (var i = grid.children.length; i >= 0; i--) {
+                        grid.appendChild(grid.children[Math.random() * i | 0]);
+                    }
+                });
+            }
+            var toggle_flag = 1;
+
+            // Function to toggle likes and change the image
+            function toggleLike(counterId, buttonId) {
+                const likeCounter = document.getElementById(counterId);
+                const likeButton = document.getElementById(buttonId);
+                let likes = parseInt(likeCounter.innerText);
+
+                // Toggle like
+                if (toggle_flag == 1) {
+                    likes++;
+                    toggle_flag = 0;
+                    likeButton.src = "liked-icon.png"; // Change the image when liked
+                } else if (likes > 0) {
+                    if (toggle_flag == 0) {
+                        likes--;
+                        toggle_flag = 1;
+                        likeButton.src = "like-icon.png"; // Change the image back when unliked
+                    }
+                }
+
+                likeCounter.innerText = likes;
+                localStorage.setItem(counterId, likes);
+            }
+
+            // Function to add a comment and store in local storage
+            function addComment(inputId, commentSectionId) {
+                const commentInput = document.getElementById(inputId);
+                const commentSection = document.getElementById(commentSectionId);
+                const commentText = commentInput.value.trim();
+
+                if (commentText !== '') {
+                    const commentDiv = document.createElement('div');
+                    commentDiv.innerText = commentText;
+                    commentSection.appendChild(commentDiv);
+                    commentInput.value = '';
+
+                    // Save comments to local storage
+                    const comments = JSON.parse(localStorage.getItem(commentSectionId)) || [];
+                    comments.push(commentText);
+                    localStorage.setItem(commentSectionId, JSON.stringify(comments));
+                }
+            }
+
+            // Function to reset likes and comments to 0
+            function resetBlog(counterId, commentSectionId) {
+                const likeCounter = document.getElementById(counterId);
+                const commentSection = document.getElementById(commentSectionId);
+
+                // Reset likes
+                likeCounter.innerText = '0';
+                localStorage.setItem(counterId, 0);
+                sessionStorage.removeItem(`${counterId}_liked`);
+
+                // Reset comments
+                commentSection.innerHTML = '';
+                localStorage.setItem(commentSectionId, JSON.stringify([]));
+                toggle_flag = 1;
+            }
+
+            // Initialize likes and comments from local storage on page load
+            window.onload = function () {
+                initializeFromLocalStorage();
+            };
+
+            // Initialize likes and comments from local storage
+            function initializeFromLocalStorage() {
+                for (let i = 1; i <= 2; i++) {
+                    const likeCounter = document.getElementById(`likeCounter${i}`);
+                    const commentSection = document.getElementById(`commentSection${i}`);
+
+                    // Initialize likes
+                    const likes = parseInt(localStorage.getItem(`likeCounter${i}`)) || 0;
+                    likeCounter.innerText = likes;
+
+                    // Initialize comments
+                    const comments = JSON.parse(localStorage.getItem(`commentSection${i}`)) || [];
+                    comments.forEach(commentText => {
+                        const commentDiv = document.createElement('div');
+                        commentDiv.innerText = commentText;
+                        commentSection.appendChild(commentDiv);
+                    });
+                }
+            }
+        </script>
+</body>
+
+</html>
