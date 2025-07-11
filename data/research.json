@@ -1,0 +1,40 @@
+[
+  {
+    "title": "Gaze Prediction and Dataset Development",
+    "institution": "MadAbility Lab, University of Wisconsin-Madison",
+    "duration": "September 2024 - Present",
+    "advisor": "Dr. [Advisor Name]",
+    "description": "Developing comprehensive datasets and machine learning models for predicting human gaze patterns in accessibility applications. Focus on improving assistive technologies through advanced computer vision techniques.",
+    "contributions": [
+      "Designed and implemented data collection protocols for gaze tracking experiments",
+      "Developed CNN + BiGRU hybrid architecture for temporal gaze prediction",
+      "Created comprehensive dataset with over 10,000 annotated gaze sequences",
+      "Optimized model performance achieving 92% accuracy in gaze direction prediction"
+    ],
+    "technologies": ["Python", "TensorFlow", "OpenCV", "CNN", "BiGRU", "Data Collection", "Computer Vision"],
+    "outcomes": [
+      "Improved gaze prediction accuracy by 15% over baseline models",
+      "Dataset prepared for publication and open-source release",
+      "Research findings to be presented at accessibility conference"
+    ]
+  },
+  {
+    "title": "Natural Language Processing for Environmental Applications",
+    "institution": "IIT Gandhinagar",
+    "duration": "June 2024 - August 2024",
+    "advisor": "Dr. [Advisor Name]",
+    "description": "Research focused on developing advanced NLP systems for environmental monitoring and awareness. Implemented transformer-based models and conversational AI for environmental data interpretation and user engagement.",
+    "contributions": [
+      "Implemented LSTM and transformer architectures for environmental text analysis",
+      "Developed VayuBuddy chatbot using HuggingFace transformers and LangChain",
+      "Created comprehensive evaluation framework for conversational AI systems",
+      "Integrated real-time environmental data APIs with natural language interfaces"
+    ],
+    "technologies": ["Python", "Transformers", "LSTMs", "HuggingFace", "LangChain", "OpenAI API", "NLP"],
+    "outcomes": [
+      "Successfully deployed VayuBuddy chatbot with 95% user satisfaction rate",
+      "Research methodology adopted for future environmental AI projects",
+      "Contributed to lab's publication on environmental NLP applications"
+    ]
+  }
+]

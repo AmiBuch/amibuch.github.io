@@ -1,0 +1,61 @@
+export const research = [
+  {
+    title: "Visual Intent Prediction and Dataset Development",
+    institution: "madAbility Lab, University of Wisconsin-Madison",
+    duration: "March 2025 - Present",
+    advisor: "Professor Yuhang Zhao, Ru Wang",
+    description:
+      "Contributing to dataset development pipeline for visual intent prediction research, analyzing preexisting visual datasets and designing novel data collection methodologies aligned with research objectives.",
+    contributions: [
+      "Contributing to the dataset development pipeline, analyzing preexisting visual datasets and designing novel data collection methodologies",
+      "Conducting comprehensive hyperparameter tuning and model optimization to enhance classification accuracy across diverse visual intent scenarios",
+      "Working on visual intent prediction models using gaze data classification, implementing custom CNN and BiGRU architectures with multiple input channels based on EHTask framework",
+      "Designed tailored train-validation-test splits to address data sparsity and categorical classification challenges",
+    ],
+    technologies: ["Python", "TensorFlow", "CNN", "BiGRU", "Computer Vision", "Gaze Tracking", "EHTask Framework"],
+    outcomes: [
+      "Evaluated model performance using custom validation metrics suited to sparse gaze data distributions",
+      "Enhanced classification accuracy across diverse visual intent scenarios",
+      "Developed novel data collection methodologies for accessibility research",
+    ],
+  },
+  {
+    title: "Advanced Time Series Forecasting and Neural Architectures",
+    institution: "Sustainability Lab, Indian Institute of Technology Gandhinagar",
+    duration: "May 2024 - July 2024",
+    advisor: "Professor Nipun Batra",
+    description:
+      "Worked on advanced time series forecasting methods and led development of advanced neural architectures including LSTM RNNs and transformer models. Implemented and evaluated multiple AI approaches including zero-shot learning with LLMs.",
+    contributions: [
+      "Led development of advanced neural architectures including LSTM RNNs and transformer models",
+      "Implemented and evaluated multiple AI approaches including zero-shot learning with LLMs",
+      "Followed Agile methodology with daily standups and sprint planning",
+      "Created detailed technical documentation and UML diagrams for architecture decisions",
+      "Deployed models to cloud infrastructure using GitLab CI/CD pipelines",
+      "Developed VayuBuddy, an air-quality prediction chatbot, using HuggingFace and LangChain implementations",
+    ],
+    technologies: [
+      "PyTorch",
+      "TensorFlow",
+      "CUDA",
+      "Git",
+      "Groq",
+      "SSH",
+      "Hugging Face",
+      "LangChain",
+      "Ollama",
+      "DarTS",
+      "GluonTS",
+      "Matplotlib",
+      "Seaborn",
+      "Pandas",
+      "NumPy",
+      "Streamlit",
+    ],
+    outcomes: [
+      "Successfully implemented advanced time series forecasting methods",
+      "Deployed production-ready models using modern CI/CD practices",
+      "Created VayuBuddy chatbot for environmental applications",
+    ],
+  },
+]

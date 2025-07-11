@@ -1,0 +1,43 @@
+[
+  {
+    "title": "LATA - Language Analysis & Translation Assistant",
+    "description": "Advanced NLP system leveraging large language models for multilingual text analysis, translation, and sentiment analysis. Implements state-of-the-art transformer architectures for real-time language processing.",
+    "technologies": ["Python", "Transformers", "PyTorch", "HuggingFace", "FastAPI", "React", "NLP"],
+    "githubUrl": "#",
+    "demoUrl": "#"
+  },
+  {
+    "title": "mAI-Mail - Intelligent Email Management",
+    "description": "AI-powered email management system using machine learning for automatic categorization, priority scoring, and smart reply suggestions. Features advanced text classification and natural language generation.",
+    "technologies": ["Python", "scikit-learn", "TensorFlow", "Flask", "JavaScript", "ML", "NLP"],
+    "githubUrl": "#",
+    "demoUrl": "#"
+  },
+  {
+    "title": "KonnectNXT - Social Network Platform",
+    "description": "Full-stack social networking platform with real-time messaging, content recommendation algorithms, and advanced user analytics. Built with modern web technologies and scalable architecture.",
+    "technologies": ["Next.js", "Node.js", "PostgreSQL", "Socket.io", "Redis", "AWS", "TypeScript"],
+    "githubUrl": "#",
+    "demoUrl": "#"
+  },
+  {
+    "title": "VayuBuddy - Environmental Chatbot",
+    "description": "Intelligent chatbot for environmental awareness and air quality monitoring. Integrates real-time data APIs with conversational AI to provide personalized environmental insights and recommendations.",
+    "technologies": ["Python", "LangChain", "OpenAI API", "Streamlit", "Pandas", "APIs"],
+    "githubUrl": "#",
+    "demoUrl": "#"
+  },
+  {
+    "title": "Neural Gaze Prediction System",
+    "description": "Computer vision system for predicting human gaze patterns using convolutional neural networks and bidirectional GRU architectures. Achieved high accuracy in eye-tracking applications.",
+    "technologies": ["Python", "TensorFlow", "OpenCV", "CNN", "BiGRU", "Computer Vision"],
+    "githubUrl": "#"
+  },
+  {
+    "title": "Academic Portfolio Website",
+    "description": "Responsive, modern portfolio website built with Next.js and Tailwind CSS. Features dark/light mode toggle, modular components, and optimized performance for academic and professional presentation.",
+    "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "Responsive Design"],
+    "githubUrl": "#",
+    "demoUrl": "#"
+  }
+]
